@@ -1869,3 +1869,123 @@ html {
     padding: 22px;
   }
 }
+
+.recycler-contact-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #237a4b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.recycler-contact-btn:hover {
+  background-color: #185c37;
+}
+
+/* Digital Receipt Styling */
+.digital-receipt {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 28px;
+  background: #ffffff;
+  color: #24352b;
+  border: 2px solid #2e7d32;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.digital-receipt h2 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.digital-receipt h3 {
+  color: #286532;
+  margin-top: 22px;
+}
+
+.digital-receipt p {
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.digital-receipt hr {
+  border: none;
+  border-top: 1px dashed #a5b9a7;
+  margin: 20px 0;
+}
+
+.digital-receipt button {
+  display: block;
+  margin: 24px auto 0;
+  padding: 12px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.digital-receipt button:hover {
+  background: #1b5e20;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #digital-receipt,
+  #digital-receipt * {
+    visibility: visible;
+  }
+
+  #digital-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+
+  #digital-receipt button {
+    display: none;
+  }
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.language-switcher select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  color: #24352b;
+  font-size: 14px;
+  cursor: pointer;
+  max-width: 130px;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    justify-content: center;
+    margin: 8px 0;
+  }
+}
